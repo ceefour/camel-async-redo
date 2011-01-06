@@ -5,7 +5,7 @@ apply plugin: 'maven'
 sourceCompatibility = '1.6'
 
 repositories {
-	mavenRepo urls: "file:${System.properties['user.home']}/.m2/repository", name: 'local'
+	mavenLocal()
 	mavenCentral()
 }
 
